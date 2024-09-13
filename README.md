@@ -39,13 +39,13 @@ The Inventory Management API provides the following endpoints using Django REST 
 * PUT /api/item-warehouse-stocks/id/: Update details of a specific item warehouse stock.
 * DELETE /api/item-warehouse-stocks/id/: Delete an item warehouse stock.
 
-# Stock Management
+## Stock Management
 The stock management functionality ensures that:
 
 Every time an item is added, updated, or deleted, the corresponding stock levels (stock_in_hand and reserved_quantity) in the ItemStock model are adjusted accordingly.
 The ItemWarehouseStock model helps in managing the stock across different warehouses and their locations. It also updates the total count of stock in the ItemStock model whenever changes occur.
 
-# Celery Task for Low Stock Notification
+## Celery Task for Low Stock Notification
 The project uses Celery for handling background tasks, such as monitoring stock levels and sending email alerts. A periodic task is set up to:
 
 Check the stock levels in the ItemStock model at regular intervals.
