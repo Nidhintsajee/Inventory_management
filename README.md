@@ -6,14 +6,14 @@ The Inventory Management API provides the following endpoints using Django REST 
 * GET /api/manufacturers/: Retrieve a list of all manufacturers.
 * POST /api/manufacturers/: Create a new manufacturer.
 * GET /api/manufacturers/id/: Retrieve details of a specific manufacturer by ID.
-* PUT /api/manufacturers/id/: Update details of a specific manufacturer.
-* DELETE /api/manufacturers/id/: Soft delete a manufacturer.
+* PUT /api/manufacturers/id/: Update details and soft delete of a specific manufacturer.
+* DELETE /api/manufacturers/id/: Delete a manufacturer.
 2. Warehouses
 * GET /api/warehouses/: Retrieve a list of all warehouses.
 * POST /api/warehouses/: Create a new warehouse.
 * GET /api/warehouses/id/: Retrieve details of a specific warehouse by ID.
-* PUT /api/warehouses/id/: Update details of a specific warehouse.
-* DELETE /api/warehouses/id/: Soft delete a warehouse.
+* PUT /api/warehouses/id/: Update details and soft delete of a specific warehouse.
+* DELETE /api/warehouses/id/: Delete a warehouse.
 3. Warehouse Locations
 * GET /api/warehouse-locations/: Retrieve a list of all warehouse locations.
 * POST /api/warehouse-locations/: Create a new warehouse location.
@@ -24,8 +24,8 @@ The Inventory Management API provides the following endpoints using Django REST 
 * GET /api/items/: Retrieve a list of all items, including their manufacturer details.
 * POST /api/items/: Create a new item. Automatically creates an entry in the ItemStock model with initial stock levels.
 * GET /api/items/id/: Retrieve details of a specific item by ID.
-* PUT /api/items/id/: Update details of a specific item.
-* DELETE /api/items/id/: Soft delete an item.
+* PUT /api/items/id/: Update details and soft delete of a specific item.
+* DELETE /api/items/id/: Delete an item.
 5. Item Stock
 * GET /api/item-stocks/: Retrieve a list of all item stocks.
 * POST /api/item-stocks/: Create a new item stock record.
