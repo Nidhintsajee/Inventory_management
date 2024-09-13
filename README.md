@@ -1,4 +1,4 @@
-# Inventory_management
+# Inventory Management
 API Endpoints
 The Inventory Management API provides the following endpoints using Django REST Framework's generic views:
 
